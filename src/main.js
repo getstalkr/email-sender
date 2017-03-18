@@ -1,6 +1,11 @@
 import micro from 'micro'
 
-const srv = micro(async () => 'hello world!')
-srv.listen(3000, () => console.log('Listening on port 3000'))
+const server = micro(
 
-export default srv
+
+
+)
+
+server.listen(process.env.PORT || 3000, () => console.log('Listening...'))
+
+export default server
