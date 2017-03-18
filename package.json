@@ -5,11 +5,12 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "babel-preset-latest": "^6.16.0",
     "babel-polyfill": "^6.20.0",
-    "source-map-support": "^0.4.9",
+    "babel-preset-latest": "^6.16.0",
     "micro": "^6.1.0",
-    "nodemailer": "^3.1.7"
+    "nodemailer": "^3.1.7",
+    "nodemailer-mailgun-transport": "^1.2.4",
+    "source-map-support": "^0.4.9"
   },
   "devDependencies": {
     "ava": "^0.17.0",

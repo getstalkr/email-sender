@@ -1,22 +1,18 @@
 import nodemailer from 'nodemailer';
+import mailgun from 'nodemailer-mailgun-transport'
 
 const sender = {
-  service: process.env.EMAIL_SERVER_SERVICE,
-  username: process.env.EMAIL_SERVER_USER,
-  password: process.env.EMAIL_SERVER_PASS
+  auth: {
+    api_key: process.env.KEY,
+    domain: process.env.DOMAIN
+  }
 }
 
 const dest = {
   username: process.env.EMAIL_DEST_USER
 }
 
-const transporter = nodemailer.createTransport({
-  service: sender.service,
-  auth: {
-    user: sender.username,
-    pass: sender.password
-  }
-});
+const transporter = nodemailer.createTransport(mailgun(sender))
 
 export default function sendMessage (subject, message, user) {
 
