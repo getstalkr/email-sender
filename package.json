@@ -32,7 +32,7 @@
     "xo": "^0.18.2"
   },
   "scripts": {
-    "start": "node dist",
+    "start": "npm run build && node dist",
     "dev": "node build --watch",
     "build": "node build",
     "test": "ava && xo",
