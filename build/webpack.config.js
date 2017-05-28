@@ -21,7 +21,7 @@ const config = {
   output: {
     libraryTarget: 'commonjs2',
     filename: 'index.js',
-    path: projectRoot
+    path: `${projectRoot}/dist`
   },
   recordsPath: path.join(projectRoot, 'build/_records'),
   resolve: { modules: [path.resolve(projectRoot, 'node_modules')] },

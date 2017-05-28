@@ -1,5 +1,5 @@
-import micro from 'micro'
-import send from './helpers/sendMessage'
+import micro, { send } from 'micro'
+import sendMessage from './helpers/sendMessage'
 
 const server = micro(
 
@@ -7,7 +7,10 @@ const server = micro(
 
     const { subject, message, senderEmail } = await micro.json(req)
 
-    await send(subject, message, senderEmail)
+    try { sendMessage(subject, message, senderEmail) }
+    catch (e) {
+        send(e.message);
+    }
 
     return 'Successfully sent!'
 

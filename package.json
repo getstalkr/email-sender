@@ -1,5 +1,5 @@
 {
-  "name": "getstalk.kr#get-in-touch",
+  "name": "email-sender",
   "version": "0.1.0",
   "description": "stalkr Official Website Contact Form Handler",
   "homepage": "getstalk.kr",
@@ -32,7 +32,7 @@
     "xo": "^0.18.2"
   },
   "scripts": {
-    "start": "node .",
+    "start": "node dist",
     "dev": "node build --watch",
     "build": "node build",
     "test": "ava && xo",

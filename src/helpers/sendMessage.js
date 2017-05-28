@@ -35,5 +35,3 @@ export default function sendMessage (subject, message, user) {
 
   })
 };
-
-
