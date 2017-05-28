@@ -1,9 +1,12 @@
 {
-  "name": "emailer",
-  "version": "0.0.1",
-  "description": "aids",
-  "main": "index.js",
+  "name": "getstalk.kr#get-in-touch",
+  "version": "0.1.0",
+  "description": "stalkr Official Website Contact Form Handler",
+  "homepage": "getstalk.kr",
+  "repository": "stalkr-io/getstal.kr",
   "license": "MIT",
+  "author": "ythecombinator <matheus.brasil10@gmail.com>",
+  "private": true,
   "dependencies": {
     "babel-polyfill": "^6.20.0",
     "babel-preset-latest": "^6.16.0",
@@ -72,7 +75,5 @@
       "babel-polyfill"
     ],
     "babel": "inherit"
-  },
-  "repository": "https://github.com/ythecombinator/email-sender",
-  "author": "Matheus Brasil <matheus.brasil10@gmail.com>"
+  }
 }
